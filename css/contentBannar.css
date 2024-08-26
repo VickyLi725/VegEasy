@@ -1,0 +1,67 @@
+/* 上方的banner 半透明 */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 5%;
+    /* 設定所需的高度*/
+    background: rgba(255, 245, 202, 0.5);
+    /* 背景顏色及透明度*/
+    color: rgb(97, 58, 58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 0%;
+    /* banner跟內容的距離 */
+    border-radius: 10px;
+}
+
+
+/* 圖片的版本 */
+
+.banner-img-title {
+    max-width: 20vw;
+    /* 限制圖片最大寬度 */
+    height: auto;
+    /* 保持圖片的原本比例 */
+    margin: 0 auto;
+    /* 使圖片保持致中 */
+    display: block;
+    /* 讓圖片為方塊元素的方式呈現 */
+}
+
+
+/* 文字的版本 */
+
+.banner-text-title {
+    font-family: 'Migra', sans-serif;
+    /* Font from Google Fonts */
+    font-weight: bold;
+    font-size: 2.5vw;
+    /*Adjust size as needed */
+    margin: 0;
+    text-align: center;
+}
+
+.banner-buttons {
+    position: absolute;
+    top: 18%;
+    right: 60px;
+    display: flex;
+    gap: 10px;
+}
+
+.icon-button img {
+    width: 3vw;
+    /* Size of the icon */
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    /* Smooth scaling effect */
+}
+
+.icon-button img:hover {
+    transform: scale(1.2);
+    /* Slightly enlarge icon on hover */
+}

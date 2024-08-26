@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../img/background_IntroFoodRest.jpg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+
+/* 這裡是我的方法 用div分行及包div塊 */
+
+main {
+    padding: 0 5%;
+    /* 整體區塊往內的距離調整 */
+    margin-bottom: 10px;
+    /* height: 90%; */
+    /* 設置高度為100%的視窗高度 */
+    box-sizing: border-box;
+    /* 包含內邊距和邊框在內的計算高度 */
+    overflow-y: auto;
+    /* 內容超過時隱藏*/
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    /* 減去其他部分的高度，比如 header 的高度 */
+    /* height: 80%; */
+}
+
+.left {
+    display: flex;
+    /* 使用 Flexbox 布局 */
+    flex-direction: column;
+    /* 垂直排列按钮 */
+    justify-content: flex-start;
+    /* 垂直靠上 */
+    align-items: center;
+    /* 水平居中 */
+    gap: 20px;
+    /* 按钮之间的间距 */
+    padding: 20px 0 0 0;
+}
+
+.right {
+    /* background-color: lightgreen; */
+    padding: 10px 15px 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* 垂直靠上 */
+    align-items: center;
+    /* 水平居中 */
+    gap: 10px;
+    /* 控制每个区块之间的间距 */
+    /* overflow-y: scroll; */
+}
+
+.title-block {
+    text-align: center;
+    font-size: 1.5em;
+    /* 使标题居中 */
+}
+
+.content-block {
+    display: flex;
+    gap: 20px;
+    /* 控制图片和文字块之间的间距 */
+}
+
+.image-side {
+    flex: 1;
+    /* 图片区域占 1/3 的空间 */
+}
+
+.image-side img {
+    width: 100%;
+    /* 确保图片占满整个区域 */
+    border-radius: 5px;
+    /* 可选：添加圆角效果 */
+}
+
+.text-side {
+    flex: 2;
+    /* 文字区域占 2/3 的空间 */
+    display: flex;
+    align-items: center;
+    /* 使文字块垂直居中 */
+    font-size: 1.3em;
+    /* 调整字体大小 */
+    line-height: 1.8; 
+    /* 行高設置為1.5倍字體大小 */
+}
+
+
+/* 整體滾動條的寬度 */
+
+::-webkit-scrollbar {
+    width: 12px;
+    /* 垂直滾動條的寬度 */
+    height: 12px;
+    /* 水平滾動條的高度 */
+}
+
+
+/* 滾動條軌道 */
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    /* 軌道背景色 */
+    border-radius: 6px;
+    /* 圓角 */
+}
+
+
+/* 滾動條滑塊 */
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* 滑塊顏色 */
+    border-radius: 6px;
+    /* 圓角 */
+    border: 2px solid #f0f0f0;
+    /* 滑塊邊框，使其看起來有些間距 */
+}
+
+
+/* 當滑鼠懸停在滑塊上時的樣式 */
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* 更深的顏色來顯示滑塊被選中的狀態 */
+}
+

@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-image: url(../img/background_IntroFoodRest.jpg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.veg-container {
+    max-width: 85%;
+    display: grid;
+    grid-template-columns: 6fr 5fr;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* 左邊區塊 */
+
+.left-section {
+    height: 90vh;
+    overflow: hidden;
+    /* 隱藏超出容器的內容 */
+    /* background-color: lightblue; */
+    /* Optional: just to visualize */
+    display: flex;
+    /* 使用 Flexbox 布局 */
+    flex-direction: column;
+    /* 垂直排列按钮 */
+    justify-content: flex-start;
+    /* 垂直居中 */
+    align-items: center;
+    /* 水平居中 */
+    gap: 20px;
+    /* 按钮之间的间距 */
+    padding: 20px 25px 0 25px;
+}
+
+
+/* 標題图片 */
+
+.title-image {
+    width: 60%;
+    /* 調整大小 */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    /* 靠右對齊 */
+    margin-top: 2%;
+}
+
+.site-title {
+    font-family: 'Migra', sans-serif;
+    font-size: 2em;
+    text-align: right;
+    /*標題靠右 */
+    margin-right: 20px;
+}
+
+.sub-title {
+    font-size: 1em;
+    display: block;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.caption-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    /* 淡色背景，透明度可调 */
+    padding: 10px;
+    text-align: right;
+    /* 文字靠右*/
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    /* 確保圖片的寬度不超過容器 */
+    max-height: 100%;
+    /* 確保圖片的高度不超過容器 */
+    object-fit: cover;
+    /* 保持圖片的比例，並裁切超出部分 */
+}
+
+.carousel-item .caption-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+}
+
+p {
+
+    font-family: "Helvetica", "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
+    text-align: right;
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+a{
+    position: relative;
+    z-index: 10; /* 設定較高的 z-index 來顯示在前面 */
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* 半透明框上面的文字樣式 碰觸文字時 */
+.carousel-item a:hover {
+    color: #28922c;
+}
+
+.blod-type {
+    font-weight: bold;
+}
+
+
+/* 右邊區塊 */
+
+.right-section {
+    /* background-color: lightgreen; */
+    /* Optional: just to visualize */
+    padding: 20px 20px 20px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* 控制每區塊之間的間距 */
+}

@@ -1,0 +1,54 @@
+/* 圖片區塊 */
+
+.restaurant-view {
+    height: 70%;
+    /* background-color: aquamarine; */
+    text-align: center;
+    margin: 0 80px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    /* 隱藏超出容器的內容 */
+}
+
+.restaurant-view img {
+    width: 70vw;
+    /* 讓圖片自適應區塊寬度 */
+    height: auto;
+    /* 保持圖片的比例 */
+    object-fit: cover;
+    /* 保持圖片比例，並使其適應容器 */
+    display: inline-block;
+    /* 讓圖片置中 */
+}
+
+
+/* 文字區塊 */
+
+.restaurant-intro {
+    width: 70vw;
+    /* 讓圖片自適應區塊寬度 */
+    height: 30%;
+    background-color: rgba(249, 250, 207, 0.678);
+    text-align: center;
+    margin: 0 15%;
+    padding: 20px 10px 10px 10px;
+    font-family: 'Noto Sans TC', sans-serif !important;
+    font-weight: bold;
+    justify-content: center;
+    /* 水平置中 */
+    align-items: center;
+    /* 垂直置中 */
+}
+
+.restaurant-intro h2 {
+    text-align: right;
+    font-weight: bold;
+}
+
+.restaurant-intro p {
+    text-align: right;
+    margin: 20px 0;
+    /* 調整文字和其他元素之間的間距 */
+    font-family: 'Noto Sans TC', sans-serif !important;
+}

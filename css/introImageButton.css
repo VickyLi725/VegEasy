@@ -1,0 +1,55 @@
+.image-button {
+    position: relative;
+    width: 69%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.imageButton-food-in-square {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    /* 添加放大的过渡效果 */
+}
+
+
+/* 确保文字在放大时跟随图片 */
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    /* 垂直居中 */
+    left: 50%;
+    /* 水平居中 */
+    transform: translate(-50%, -50%);
+    /* 移动元素以确保居中对齐 */
+    color: white;
+    /* font-size: 1.5vw; */
+    font-size: clamp(0.8rem, 2.5vw, 1.4rem);
+    /* 根据视窗大小自适应字体大小 */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.705);
+    /* 增加文字阴影以便更清楚 */
+    z-index: 1;
+    /* 确保文字在图片上方 */
+    display: inline-block;
+    /* 确保文字响应 transform */
+    transition: transform 0.3s ease-in-out;
+    /* 确保文字的平滑过渡效果 */
+    white-space: nowrap;
+    /* 防止文字换行 */
+}
+
+
+/* 当鼠标悬停时，图片和文字同时放大 */
+
+.image-button:hover .imageButton-food-in-square,
+.image-button:hover .image-text {
+    filter: saturate(2);
+    /* 彩度增加至 200% */
+    transform: scale(1.2);
+    /* 图片和文字放大 20% */
+}

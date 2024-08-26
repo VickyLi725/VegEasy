@@ -1,0 +1,6 @@
+// scripts.js
+
+function toggleMenu() {
+    const nav = document.querySelector('.banner nav');
+    nav.classList.toggle('show');
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餐廳展示頁面</title>
+    <link rel="stylesheet" href="./css/contentBannar.css">
+    <link rel="stylesheet" href="./css/introImageButton.css">
+    <link rel="stylesheet" href="./css/seeVegss.css">
+    <link rel="stylesheet" href="./css/introViewPart.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <h1 class="banner-text-title">台灣常見素食種類</h1>
+            <!-- <img class="banner-title" src="./img/vagRestaurant/vTitle.png" alt="餐廳標題"> -->
+            <div class="banner-buttons">
+                <a href="veg-food.html" class="icon-button"><img src="./img/icon/Restaurant.png" alt="回到餐廳介紹頁"></a>
+                <a href="index.html" class="icon-button"><img src="./img/icon/home.png" alt="回到主頁"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="left">
+                <!-- 素食類別按鈕 -->
+                <div class="image-button" onclick="showDiv('seePot')">
+                    <img src="./img/vegIntro/vIntro01.png" alt="全素" class="imageButton-food-in-square">
+                    <div class="image-text">鍋邊/方便素</div>
+                </div>
+
+                <div class="image-button" onclick="showDiv('seeEggMilk')">
+                    <img src="./img/vegIntro/vIntro02.png" alt="豆腐" class="imageButton-food-in-square">
+                    <div class="image-text">蛋、奶素</div>
+                </div>
+
+                <div class="image-button" onclick="showDiv('seeFive')">
+                    <img src="./img/vegIntro/vIntro03.png" alt="豆腐" class="imageButton-food-in-square">
+                    <div class="image-text">植物五辛素</div>
+                </div>
+
+                <div class="image-button" onclick="showDiv('seeVegs')">
+                    <img src="./img/vegIntro/vIntro04.png" alt="豆腐" class="imageButton-food-in-square">
+                    <div class="image-text">全素/純素</div>
+                </div>
+
+
+
+            </div>
+            <div class="right">
+                <!-- 方便素區塊 -->
+                <div id="seePot" class="content-div scroll-veg">
+
+                    <div class="title-block">
+                        <h1>鍋邊素</h1>
+                    </div>
+                    <div class="content-block">
+                        <div class="image-side">
+                            <img src="./img/vegIntro/Intro_011.png" alt="方便素圖片">
+                        </div>
+                        <div class="text-side">
+                            <p>鍋邊素是指素食者若碰到葷菜料理，
+                                也可以夾取盤中非肉品的食物進行食用。
+                                常見於親友一起吃合菜、聚餐，
+                                或餐點已事先點好上桌的各種聚會，
+                                為避免造成餐廳及同桌困擾，
+                                所以就挑選菜盤中素食的食材來吃，
+                                比如青菜、菇類、豆製品等。
+                                因為一起烹煮，所以食材都會沾染葷食。
+                                但卻是聚餐時最為方便的素食選項。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="title-block">
+                        <h1>方便素</h1>
+                    </div>
+                    <div class="content-block">
+                        <div class="image-side">
+                            <img src="./img/vegIntro/Intro_012.png" alt="方便素圖片">
+                        </div>
+                        <div class="text-side">
+                            <p>方便素是在點餐時就告知店家以素食的方式料理餐點，
+                                而鍋邊素則是指在已經上菜後，
+                                自行避開餐盤裡的葷食，只夾取素食的食材。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="title-block">
+                        <h1>鍋邊素及方便素的差異</h1>
+                    </div>
+                    <div class="content-block">
+                        <div class="image-side">
+                            <img src="./img/vegIntro/Intro_013.png" alt="方便素圖片">
+                        </div>
+                        <div class="text-side">
+                            <p>指素食者平常皆以素食餐點為主，
+                                但若碰上需要進葷食餐廳的情況，
+                                可以在點餐時主動請店家避免在餐點中加入葷食，
+                                盡可能以素食方式料理餐點。
+                            </p>
+                        </div>
+                    </div>     
+                </div>
+                <!-- 蛋奶素區塊 -->
+                <div id="seeEggMilk" class="content-div scroll-veg">
+                    <div class="title-block">
+                        <h1>蛋奶素</h1>
+                    </div>
+                    <div class="content-block">
+                        <div class="image-side">
+                            <img src="./img/vegIntro/Intro_023EM.png" alt="方便素圖片">
+                        </div>
+                        <div class="text-side">
+                            <p>蛋奶素是指除了全素可吃的食物以外，還包含了蛋和奶類產品，但不包括肉類或魚類。這類素食者食用雞蛋和奶類產品，但不吃其他動物性食材。<br>
+                            在台灣，通常蛋奶素食者也不吃五辛，因此市面上標榜奶蛋素的食品也通常不含五辛。</p>
+                        </div>
+                    </div>
+                    <div class="title-block">
+                        <h1>蛋素</h1>
+                    </div>
+                    <div class="content-block">
+                        <div class="image-side">
+                            <img src="./img/vegIntro/Intro_021egg.png" alt="方便素圖片">
+                        </div>
+                        <div class="text-side">
+                            <p>蛋素指的是食物中可以包含蛋類產品，但不含其他動物性食材。這類素食者食用雞蛋，但不吃肉類和魚類。</p>
+                        </div>
+                    </div>
+                    <div class="title-block">
+                        <h1>奶素</h1>
+                    </div>
+                    <div class="content-block">
+                        <div class="image-side">
+                            <img src="./img/vegIntro/Intro_022milk.png" alt="方便素圖片">
+                        </div>
+                        <div class="text-side">
+                            <p>奶素允許攝取奶類產品，但不吃肉類、魚類或蛋類。這類素食者會喝牛奶、吃奶酪和其他乳製品。</p>
+                        </div>
+                    </div>
+                   
+
+                </div>
+
+
+                <!-- 五辛素區塊 -->
+                <div id="seeFive" class="content-div scroll-veg">
+                    <div class="title-block">
+                        <h1>植物五辛素</h1>
+                    </div>
+                    <div class="content-block">
+                        <div class="image-side">
+                            <img src="./img/vegIntro/Intro_03five.png" alt="方便素圖片">
+                        </div>
+                        <div class="text-side">
+                            <p>食品標示的五辛素，指料理中可能包含「五辛」或「蛋奶」。<br>
+                                <br>
+                                五辛素中的五辛是指：<br>
+                                1. 蒜：大蒜、蒜苗<br>
+                                2. 蔥：青蔥、紅蔥、革蔥、慈蔥、蘭蔥<br>
+                                3. 韭：韭菜、韭黃、韭菜花<br>
+                                4. 薤：讀做（ㄒㄧㄝˋ），蕗蕎、小蒜、蕎頭、薤菜 <br>
+                                5. 興渠：即為洋蔥<br>
+                                <br>
+                                這五種辛味植物因其具有刺激性或過於濃烈的味道，在某些宗教如道教、佛教或部分文化中被認為會刺激情緒、影響靜心，因此一些素食者會避免食用它們。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 全素區塊 -->
+                <div id="seeVegs" class="content-div scroll-veg">
+                    <div class="title-block">
+                        <h1>全素/純素</h1>
+                    </div>
+                    <div class="content-block">
+                        <div class="image-side">
+                            <img src="./img/vegIntro/Intro_04vege.png" alt="方便素圖片">
+                        </div>
+                        <div class="text-side">
+                            <p>全素或純素僅食用純植物性食品，不包含任何肉類、魚類、蛋類、奶類及其衍生產品。<br>
+                            在台灣，但凡食品標示為「全素」，也通常不包含五辛(蔥、蒜、韭菜、洋蔥、興蕖)。
+                            <br><br>
+                            底下也一併介紹Vegan及Vegetarian的差異。
+                        </p>
+                        
+                        </div>
+                    </div>
+                    <div class="title-block">
+                        <h1>維根 Vegan</h1>
+                    </div>
+                    <div class="content-block">
+                        <div class="image-side">
+                            <img src="./img/vegIntro/Intro_042.png" alt="方便素圖片">
+                        </div>
+                        <div class="text-side">
+                            <p> 也稱純素主義（Veganism），是一種哲學和生活方式，志在盡可能排除對動物的剝削與虐待。<br>
+                                Vegan的理念為人類應善待動物，
+                                因此選擇不使用或參與任何源於動物的食物、製品及消費行為，
+                                如：蛋奶、蜂蜜、皮包、部分化妝品、參與動物展演。
+                                在飲食上，除去蛋奶外，基本就等同於國內的五辛素。
+                                <br><br> </p>
+                        </div>
+                    </div>
+                    <div class="title-block">
+                        <h1>Vegetarian</h1>
+                    </div>
+                    <div class="content-block">
+                        <div class="image-side">
+                            <img src="./img/vegIntro/Intro_043.png" alt="方便素圖片">
+                        </div>
+                        <div class="text-side">
+                            <p>也稱作veggie，類似台灣分類的蛋奶素食者，不吃肉類、海鮮，
+                                但可以食用蛋奶製品和五辛植物。<br><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </main>
+
+
+
+
+    <!-- 區塊顯示與隱藏的程式 -->
+    <script src="./js/seeVegs2.js"></script>
+    <!-- 這裡是使用 Js 的list陣列區塊放圖片及超連結  -->
+    <script src="./js/vFoodList.js"></script>
+
+</body>
+
+</html>

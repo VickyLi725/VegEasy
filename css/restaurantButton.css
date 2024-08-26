@@ -1,0 +1,29 @@
+.image-button-arrow {
+    position: relative;
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.imageButton-food-in-square {
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out; /* 添加放大的过渡效果 */
+} 
+
+.image-button-arrow img{
+    width: 30px;
+    /* Size of the icon */
+    height: auto;
+    display: block;
+}
+
+
+/* 当鼠标悬停时，图片和文字同时放大 */
+.image-button-arrow:hover .imageButton-food-in-square,
+.image-button-arrow:hover {
+    transform: scale(1.1); /* 图片和文字放大 20% */
+}

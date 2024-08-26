@@ -1,0 +1,30 @@
+/* seeVegss.css */
+/* 餐廳介紹與蔬食分類介紹共用 */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../img/background_IntroFoodRest.jpg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.content-div {
+    display: none;
+    margin-top: 0;
+    overflow: hidden;
+    height: 89vh;
+}
+
+.content-div.active {
+    display: block;
+}
+
+/* 寫給intro的內容物的 */
+.content-div.scroll-veg {
+    overflow: auto;
+    margin-right: -30px;
+    padding: 0 30px 0 0;
+}
+
+
+/* 覆蓋的東西如果重複了就不要再寫了 如果有要覆蓋前面功能的功能再往後放 */

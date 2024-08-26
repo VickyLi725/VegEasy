@@ -1,0 +1,111 @@
+/* styles.css */
+
+.banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px 10px 20px;
+    background-color: #762b00;
+    color: white;
+    justify-content: flex-start; /* 使 logo 和 nav 分开 */
+    position: relative;
+}
+
+.logo {
+    height: 60px;
+    margin-left: 10%;
+    /* 控制 logo 的大小 */
+}
+
+.banner nav {
+    display: flex;
+    gap: 20px;
+    margin-left: 2vw;
+}
+
+
+/* 文字的版本 */
+
+.t-title {
+    font-family: 'Migra', sans-serif;
+    /* Font from Google Fonts */
+    font-weight: bold;
+    font-size: 2.5em;
+    /*Adjust size as needed */
+    margin: 0;
+    text-align: center;
+}
+
+
+/* 按鈕樣式 */
+
+.button {
+    text-align: center;
+    width: 170px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: black;
+    background-color: #E5B313;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #FFDF7A;
+}
+
+
+/* 下拉菜单按钮样式 */
+.menu-toggle {
+    display: none;
+    background-color: #E5B313;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* 隐藏下拉菜单的样式 */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* 响应式处理 */
+@media (max-width: 768px) {
+    .banner {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .menu-toggle {
+        display: block; /* 显示下拉菜单按钮 */
+    }
+
+    .banner nav {
+        display: none; /* 隐藏导航 */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #762b00d3;
+        padding: 10px;
+        z-index: 1000; /* 确保菜单在其他内容之上 */
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .banner nav.show {
+        display: flex; /* 显示下拉菜单 */
+    }
+
+
+}
