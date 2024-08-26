@@ -76,3 +76,13 @@
     padding-left: 10%;
     padding-right: 10px;
 }
+
+.food-intro {
+    text-align: end;
+    color: #000;
+    background-color: rgba(255, 228, 196, 0.616);
+    width: 100%;
+    position: sticky;
+    padding: 20px;
+    margin-top: -90px;
+}

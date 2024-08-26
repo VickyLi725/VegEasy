@@ -8,24 +8,33 @@ body {
     background-repeat: repeat-y;
 }
 
+
 /* 瀏覽器預設ul的padding為40px  這裡的做法是把padding改為0*/
+
 ul {
     padding: 0;
 }
 
+
 /* 這裡是我的方法 用div分行及包div塊 */
+
 main {
     padding: 0 5%;
     /* 整體區塊往內的距離調整 */
 }
+
+
 /* div行的部分 */
+
 .row-for-food-item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
+
 /* 詢問同學後使用ul li的部分 */
+
 .list {
     display: flex;
     justify-content: space-between;
@@ -34,7 +43,9 @@ main {
     /* 允許子元素換行 */
 }
 
+
 /* 每一個食物方塊的長相 */
+
 .food-item {
     position: relative;
     width: 30%;
@@ -47,7 +58,9 @@ main {
     /* 增加圓角功能 */
 }
 
+
 /* 滑鼠還沒碰觸時的畫面 */
+
 .img-food-in-square {
     width: 100%;
     display: block;
@@ -56,13 +69,17 @@ main {
     /* 添加放大的過度效果 */
 }
 
+
 /* 滑鼠停在上方的放大效果 */
+
 .food-item:hover .img-food-in-square {
     transform: scale(1.1);
     /* 放大 10% */
 }
 
+
 /* 一開始隱藏半透明框 */
+
 .translucent-square {
     position: absolute;
     bottom: 0;
@@ -72,7 +89,7 @@ main {
     box-sizing: border-box;
     padding: 10px;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: end;
     border-radius: 0 0 5px 5px;
     opacity: 0;
@@ -81,35 +98,71 @@ main {
     /* 添加過度效果 */
 }
 
+
 /* 滑鼠停在 .food-item 上時顯示半透明的方塊 */
+
 .food-item:hover .translucent-square {
     opacity: 1;
     /* 顯示半透明方塊 */
 }
 
+
 /* 半透明框上面的文字樣式 沒碰觸文字時 */
-.translucent-square a {
+
+.translucent-square .rest-name {
     color: #333;
     text-decoration: none;
     font-size: 3.2vh;
     font-weight: bold;
-    display: block; /* 確保 <a> 佔據一整行 */
-    margin-bottom: 40px; /* 增加一點底部的間距 */
+    display: block;
+    /* 確保 <a> 佔據一整行 */
+    margin-bottom: 40px;
+    /* 增加一點底部的間距 */
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-
 }
 
+
 /* 半透明框上面的文字樣式 沒碰觸文字時 */
+
 .translucent-square p {
     position: absolute;
     color: #333;
     text-decoration: none;
     font-size: 2vh;
     font-weight: bold;
-    display: block; /* 確保 <p> 佔據一整行 */
+    display: block;
+    /* 確保 <p> 佔據一整行 */
 }
 
+
 /* 半透明框上面的文字樣式 碰觸文字時 */
+
 .translucent-square a:hover {
     color: #4CAF50;
+}
+
+
+/* 愛心按鈕 */
+
+.heart-button {
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+    width: 24px;
+    /* 調整愛心按鈕的大小 */
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.heart-button img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.heart-button:hover img {
+    transform: scale(1.2);
 }
